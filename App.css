@@ -1,0 +1,200 @@
+
+.kanban-board {
+  padding: 20px;
+}
+
+.kanban-columns {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.kanban-header {
+  display: flex;
+  justify-content: space-between; /* Spread items to the edges */
+  align-items: center; /* Vertically center items */
+  padding: 0 16px; 
+  padding-bottom: 20px;/* Add padding to the header */
+}
+
+.kanban-left {
+  display: flex;
+  align-items: center; /* Align the icon and heading together */
+  gap: 12px; /* Add spacing between the icon and heading */
+}
+
+.kanban-header h3 {
+  margin: 0; /* Remove margin from heading */
+  white-space: nowrap; /* Prevent the heading from wrapping */
+  overflow: hidden; /* Hide overflow text */
+  text-overflow: ellipsis; /* Show ellipsis for overflow text */
+}
+
+
+.kanban-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Space between AddIcon and DotIcon */
+}
+
+
+
+
+.kanban-column {
+  width: 20%;
+  
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.ticket-card {
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+}
+
+.display-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px 10px 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.dropdowns {
+  position: absolute;
+  top: 100%; 
+  display: flex;
+  flex-direction: column; /* Ensure the dropdowns are stacked vertically */
+  gap: 10px;
+  margin-top: 10px;
+  padding: 10px 20px 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #ffffff;
+  
+}
+
+.group-dropdown,
+.sort-dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-right: 75px;
+}
+
+.group-dropdown label,
+.sort-dropdown label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 10px;
+  opacity: 0.75;
+}
+
+.dropdown-select {
+  position: relative;
+}
+
+select {
+  padding: 5px 30px 5px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+/* Arrow placement inside select dropdown */
+/* .dropdown-select::after {
+   /* Path to the arrow icon */
+ /* position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+} */
+
+.display-text {
+  margin-right: 5px;
+  margin-left: 5px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.user-info {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.user-info p {
+  margin: 0; /* Removes default margin */
+}
+
+.status-icon {
+  min-width: 14px;
+  min-height: 14px;
+  width: 14px; /* Fixed width */
+  height: 14px; /* Fixed height */
+  flex-shrink: 0; /* Prevent it from shrinking */
+  margin-right: 5px; /* Space between icon and title */
+}
+
+.status-info {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 0px;
+  overflow: visible;
+}
+.status-info h4 {
+  font-size: 14px; /* Set a fixed font size */
+  margin-left: 0px; /* Remove margin */
+}
+.priority-tag {
+  display: flex; /* Use flexbox for horizontal alignment */
+  align-items: center; /* Center items vertically */
+  gap: 8px; /* Space between the icon and the tag */
+  margin-top: 8px; /* Space above the priority and tag */
+  
+}
+
+.priority-icon{
+  width: 15px; /* Adjust as needed */
+  height: 15px; /* Adjust as needed */
+  border: 6px solid #7e1616;
+  border-radius: 4px;
+  background-color: #a41d1d;
+}
+
+.ticket-tag {
+  margin: 0px; /* Removes default margin */
+  
+  padding-left: 3px;
+}
+.tag-icon {
+  font-size: 14px;
+  opacity: 0.65;
+  padding: 5px;
+  padding-right: 5px;
+  display:flex;
+  align-items: center;
+  border: 0.5px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+ 
